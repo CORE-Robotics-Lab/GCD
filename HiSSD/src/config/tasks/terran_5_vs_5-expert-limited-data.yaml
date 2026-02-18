@@ -1,0 +1,82 @@
+# ----- marine battle setting config -----
+
+# get env information
+env: "smacv2"
+
+# get task information
+task: "terran_5_vs_5-expert"
+
+env_args:
+  map_name: "terran_5_vs_5"
+  scenario: "terran_5_vs_5"
+
+
+# define train tasks and test tasks
+train_tasks: [
+
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md',  
+
+]
+
+train_tasks_data_quality: {
+
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+
+}
+
+test_tasks: [
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md',  
+]
+
+test_tasks_data_quality: {
+
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+}
+
+# define additional pretrain tasks
+pretrain_tasks: [
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md',  
+]
+
+pretrain_tasks_data_quality: {
+
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+    
+}
+
+
+
+
+
+
+

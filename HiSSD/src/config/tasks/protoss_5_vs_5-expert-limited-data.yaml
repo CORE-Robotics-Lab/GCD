@@ -1,0 +1,70 @@
+# ----- marine battle setting config -----
+
+# get env information
+env: "smacv2"
+
+# get task information
+task: "protoss_5_vs_5-expert"
+env_args:
+  map_name: "protoss_5_vs_5"
+  scenario: "protoss_5_vs_5"
+
+# define train tasks and test tasks
+train_tasks: [
+
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+
+]
+ 
+train_tasks_data_quality: {
+
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+
+}
+
+test_tasks: [
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+]
+
+test_tasks_data_quality: {
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+}
+
+# define additional pretrain tasks
+pretrain_tasks: [
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+]
+
+pretrain_tasks_data_quality: {
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+}

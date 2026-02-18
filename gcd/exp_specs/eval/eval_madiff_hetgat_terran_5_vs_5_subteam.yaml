@@ -1,0 +1,21 @@
+
+exp_name: "mad_hetgat_smac/terran_5_vs_5_testing"
+script_path: "run_scripts/evaluate_smac_v2_subteams.py"
+
+log_dir: "logs/mad_smac/terran_5_vs_5-Replay/h_4-hh_20-models.SharedConvHetGATDeconv-r_20-guidew_1.2-ctde_False/100"
+
+load_step: 250000
+
+
+num_eval: 100
+num_envs: 10
+
+evaluator: "utils.MADEvaluator"
+overwrite: True
+use_ddim_sample: True
+n_ddim_steps: 15
+eval_env: "terran_5_vs_5"
+eval_env_subteam: '1ma_1mr_3md'
+eval_freq: 0
+prob_obs_enemy: 1.0
+decentralized_execution: False  

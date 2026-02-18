@@ -1,0 +1,16 @@
+env: smacv2
+
+env_args:
+  map_name: "terran_5_vs_5"
+  scenario: "terran_5_vs_5"
+
+test_greedy: True
+test_nepisode: 30
+test_interval: 200000
+log_interval: 100000
+runner_log_interval: 100000
+learner_log_interval: 100000
+t_max: 30050000
+training_episodes: 4000
+save_model: True
+save_model_interval: 5000000

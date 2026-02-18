@@ -1,0 +1,96 @@
+
+exp_name: "mad_smac_v2"
+job_name: "{dataset}/{model}"
+
+
+# misc
+seed: 100
+n_agents: 5
+use_action: True
+discrete_action: True
+
+
+# dataset
+loader: "datasets.SequenceDataset"
+normalizer: "CDFNormalizer"
+
+env_type: "smac_v2"
+dataset: "protoss_5_vs_5-Replay"
+
+max_n_episodes: 50000
+preprocess_fns: []
+use_padding: True
+use_zero_padding: False 
+pred_future_padding: True
+discount: 0.99
+termination_penalty: 0.0
+max_path_length: 200
+
+renderer: "utils.SMACRenderer"
+n_reference: 3
+
+
+# model
+model: "models.SharedConvAttentionDeconv"
+diffusion: "models.GaussianDiffusion"
+dim_mults: [1, 4, 8]
+dim: 128
+hidden_dim: 256
+
+residual_attn: True
+decentralized_execution: False  # conditioning on all agents info 
+
+use_hetgat_attention: False
+graph_condition: False
+returns_condition: True
+
+
+action_weight: 10
+loss_weights: null
+loss_discount: 1
+use_return_to_go: True
+predict_epsilon: True
+calc_energy: False
+clip_denoised: True
+train_only_inv: False
+share_inv: True
+
+
+
+# diffusion 
+horizon: 4
+history_horizon: 20
+returns_scale: 20
+n_diffusion_steps: 200
+condition_dropout: 0.25
+condition_guidance_w: 1.2
+use_ddim_sample: True
+n_ddim_steps: 15
+test_ret: 1.0
+
+
+# training
+learning_rate: 0.0002
+ema_decay: 0.995
+batch_size: 32
+gradient_accumulate_every: 2
+
+n_steps_per_epoch: 10000
+n_train_steps: 500000
+log_freq: 1000
+save_freq: 50000
+sample_freq: 0
+save_checkpoints: True
+
+n_saves: 5
+save_parallel: False
+
+# load checkpoint
+continue_training: True
+
+# eval
+evaluator: "utils.MADEvaluator"
+num_envs: 10
+num_eval: 100
+eval_freq: 50000
+eval_env: protoss_5_vs_5

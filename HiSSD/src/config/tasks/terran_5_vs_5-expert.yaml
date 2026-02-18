@@ -1,0 +1,159 @@
+# ----- marine battle setting config -----
+
+# get env information
+env: "smacv2"
+
+# get task information
+task: "terran_5_vs_5-expert"
+
+env_args:
+  map_name: "terran_5_vs_5"
+  scenario: "terran_5_vs_5"
+
+
+# define train tasks and test tasks
+train_tasks: [
+    '1ma_1mr_3md', 
+    '1ma_2mr_2md', 
+    '1ma_3mr_1md', 
+    '1ma_4md', 
+    '1ma_4mr', 
+    '1mr_4md', 
+    '2ma_1mr_2md', 
+    '2ma_2mr_1md', 
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_1mr_1md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md',  
+    '4ma_1md', 
+    '4ma_1mr', 
+    '4mr_1md', 
+    '5ma', 
+    '5mr'
+]
+
+train_tasks_data_quality: {
+    '1ma_1mr_3md': "expert",
+    '1ma_2mr_2md': "expert", 
+    '1ma_3mr_1md': "expert", 
+    '1ma_4md': "expert",
+    '1ma_4mr': "expert", 
+    '1mr_4md': "expert", 
+    '2ma_1mr_2md': "expert", 
+    '2ma_2mr_1md': "expert", 
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_1mr_1md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+    '4ma_1md': "expert", 
+    '4ma_1mr': "expert", 
+    '4mr_1md': "expert", 
+    '5ma': "expert",
+    '5mr': "expert",
+}
+
+test_tasks: [
+    '1ma_1mr_3md', 
+    '1ma_2mr_2md', 
+    '1ma_3mr_1md', 
+    '1ma_4md', 
+    '1ma_4mr', 
+    '1mr_4md', 
+    '2ma_1mr_2md', 
+    '2ma_2mr_1md', 
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_1mr_1md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md', 
+    '4ma_1md', 
+    '4ma_1mr', 
+    '4mr_1md', 
+    '5ma', 
+    '5mr'
+]
+
+test_tasks_data_quality: {
+    '1ma_1mr_3md': "expert",
+    '1ma_2mr_2md': "expert", 
+    '1ma_3mr_1md': "expert", 
+    '1ma_4md': "expert",
+    '1ma_4mr': "expert", 
+    '1mr_4md': "expert", 
+    '2ma_1mr_2md': "expert", 
+    '2ma_2mr_1md': "expert", 
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_1mr_1md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+    '4ma_1md': "expert", 
+    '4ma_1mr': "expert", 
+    '4mr_1md': "expert", 
+    '5ma': "expert",
+    '5mr': "expert",
+}
+
+# define additional pretrain tasks
+pretrain_tasks: [
+    '1ma_1mr_3md', 
+    '1ma_2mr_2md', 
+    '1ma_3mr_1md', 
+    '1ma_4md', 
+    '1ma_4mr', 
+    '1mr_4md', 
+    '2ma_1mr_2md', 
+    '2ma_2mr_1md', 
+    '2ma_3md', 
+    '2ma_3mr',    
+    '2mr_3md', 
+    '3ma_1mr_1md', 
+    '3ma_2md', 
+    '3ma_2mr', 
+    '3mr_2md', 
+    '4ma_1md', 
+    '4ma_1mr', 
+    '4mr_1md', 
+    '5ma', 
+    '5mr'
+]
+
+pretrain_tasks_data_quality: {
+    '1ma_1mr_3md': "expert",
+    '1ma_2mr_2md': "expert", 
+    '1ma_3mr_1md': "expert", 
+    '1ma_4md': "expert",
+    '1ma_4mr': "expert", 
+    '1mr_4md': "expert", 
+    '2ma_1mr_2md': "expert", 
+    '2ma_2mr_1md': "expert", 
+    '2ma_3md': "expert",
+    '2ma_3mr': "expert",    
+    '2mr_3md': "expert", 
+    '3ma_1mr_1md': "expert", 
+    '3ma_2md': "expert", 
+    '3ma_2mr': "expert", 
+    '3mr_2md': "expert", 
+    '4ma_1md': "expert", 
+    '4ma_1mr': "expert", 
+    '4mr_1md': "expert", 
+    '5ma': "expert",
+    '5mr': "expert",
+}
+
+
+
+
+
+
+

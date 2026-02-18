@@ -1,0 +1,29 @@
+setuptools==59.5.0
+# cython < 3.0
+h5py
+imageio
+matplotlib
+numpy
+probscale
+pygame
+pytest
+pyyaml
+# pyyaml==5.4.1
+# pip install "cython<3.0.0" wheel
+#  pip install "pyyaml==5.4.1" --no-build-isolation
+gymnasium
+gym==0.23.1
+pettingzoo
+
+sacred
+scipy
+seaborn
+snakeviz
+tensorboard
+tensorboard-logger
+tensorboardx
+torch
+torchaudio
+torchvision
+git+https://github.com/oxwhirl/smac.git
+git+https://github.com/oxwhirl/smacv2.git

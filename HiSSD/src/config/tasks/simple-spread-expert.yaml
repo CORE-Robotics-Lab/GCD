@@ -1,0 +1,18 @@
+# ----- simple spread setting config -----
+
+# get env information
+env: "gymma"
+env_args:
+  N: 3
+# get task information
+task: "simple_spread"
+# define train tasks and test tasks
+train_tasks: [2, 4]
+train_tasks_data_quality: { 2: "expert", 4: "expert" }
+
+test_tasks: [2, 3, 4, 5]
+test_tasks_data_quality: {}
+
+# define additional pretrain tasks
+pretrain_tasks: [2, 4]
+pretrain_tasks_data_quality: { 2: "expert", 4: "expert" }

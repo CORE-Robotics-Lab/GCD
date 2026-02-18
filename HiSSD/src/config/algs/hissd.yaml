@@ -1,0 +1,80 @@
+
+
+runner: "mt_episode"
+# runner: "mt_parallel" # Runs 1 env for an episode
+
+
+# only use for initializing action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+# update the target network every _ steps
+target_update_interval: 80
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "hissd_learner"
+double_q: True
+mixer: "mt_qattn"
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+
+name: "mto"
+
+# agent type
+agent: "mt_hissd"
+
+# mac
+mac: "mt_hissd_mac"
+optim_type: "AdamW" # Optimizer type
+
+# params about trans mixing network
+entity_embed_dim: 64
+attn_embed_dim: 8
+skill_dim: 64
+task: 3
+c_step: 1
+# beta: 0.001
+beta: 0.05
+coef_conservative: 5.0
+coef_dist: 5.0
+pretrain_steps: 20000
+pretrain: False
+weight_decay: 0.0001
+
+head: 1
+depth: 1
+
+# params about observation decomposition
+id_length: 4
+max_agent: 15
+
+# params about ensemble loss
+coef_ensemble: 0.001
+coef_kl: 0.1
+coef_ent: 0.01
+coef_sim: 1.0
+random: 0.5
+# mask: True
+mask: False
+td_weight: 10.0
+epsilon: 0.9
+
+# planner params
+num_stack_frames: 1
+vq_skill: False
+code_dim: 16
+
+# discriminator params
+ssl_type: "moco"
+# ssl_type: "byol"
+ssl_time_window: 4
+
+double_neg: True
+
+noise_weight: 0.
+adaptation: False
+debug: False

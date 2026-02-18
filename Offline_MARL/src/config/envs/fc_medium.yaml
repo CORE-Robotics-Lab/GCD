@@ -1,0 +1,32 @@
+env: fc
+
+env_args:
+  map_name: fc_medium
+  n_types: 2
+  num_P: 3
+  num_A: 2
+  dim: 10
+  vision: 1
+  tensor_obs: False
+  episode_limit: 100
+  mode: mixed
+  nfires: 1
+  fire_spread_off : False
+  no_stay: False
+  reward_type: 3
+  max_wind_speed: ~
+  render_save: False
+  log_dir: ~
+
+test_greedy: True
+test_nepisode: 50
+test_interval: 100000
+log_interval: 10000
+runner_log_interval: 100000
+learner_log_interval: 10000
+
+# t_max: 5050000
+t_max: 20050000
+training_episodes: 2000
+
+

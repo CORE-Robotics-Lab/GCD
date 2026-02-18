@@ -1,0 +1,150 @@
+# ----- marine battle setting config -----
+
+# get env information
+env: "smacv2"
+
+# get task information
+task: "protoss_5_vs_5-expert"
+env_args:
+  map_name: "protoss_5_vs_5"
+  scenario: "protoss_5_vs_5"
+
+# define train tasks and test tasks
+train_tasks: [
+    '1st_1ze_3co', 
+    '1st_2ze_2co', 
+    '1st_3ze_1co', 
+    '1st_4co', 
+    '1st_4ze', 
+    '1ze_4co', 
+    '2st_1ze_2co', 
+    '2st_2ze_1co', 
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_1ze_1co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+    '4st_1co', 
+    '4st_1ze', 
+    '4ze_1co', 
+    '5st', 
+    '5ze'
+]
+
+train_tasks_data_quality: {
+    '1st_1ze_3co': "expert", 
+    '1st_2ze_2co': "expert", 
+    '1st_3ze_1co': "expert", 
+    '1st_4co': "expert", 
+    '1st_4ze': "expert", 
+    '1ze_4co': "expert", 
+    '2st_1ze_2co': "expert", 
+    '2st_2ze_1co': "expert", 
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_1ze_1co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+    '4st_1co': "expert", 
+    '4st_1ze': "expert", 
+    '4ze_1co': "expert", 
+    '5st': "expert", 
+    '5ze': "expert",
+}
+
+test_tasks: [
+    '1st_1ze_3co', 
+    '1st_2ze_2co', 
+    '1st_3ze_1co', 
+    '1st_4co', 
+    '1st_4ze', 
+    '1ze_4co', 
+    '2st_1ze_2co', 
+    '2st_2ze_1co', 
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_1ze_1co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+    '4st_1co', 
+    '4st_1ze', 
+    '4ze_1co', 
+    '5st', 
+    '5ze'
+]
+
+test_tasks_data_quality: {
+    '1st_1ze_3co': "expert", 
+    '1st_2ze_2co': "expert", 
+    '1st_3ze_1co': "expert", 
+    '1st_4co': "expert", 
+    '1st_4ze': "expert", 
+    '1ze_4co': "expert", 
+    '2st_1ze_2co': "expert", 
+    '2st_2ze_1co': "expert", 
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_1ze_1co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+    '4st_1co': "expert", 
+    '4st_1ze': "expert", 
+    '4ze_1co': "expert", 
+    '5st': "expert", 
+    '5ze': "expert",
+}
+
+# define additional pretrain tasks
+pretrain_tasks: [
+    '1st_1ze_3co', 
+    '1st_2ze_2co', 
+    '1st_3ze_1co', 
+    '1st_4co', 
+    '1st_4ze', 
+    '1ze_4co', 
+    '2st_1ze_2co', 
+    '2st_2ze_1co', 
+    '2st_3co', 
+    '2st_3ze', 
+    '2ze_3co', 
+    '3st_1ze_1co', 
+    '3st_2co', 
+    '3st_2ze', 
+    '3ze_2co', 
+    '4st_1co', 
+    '4st_1ze', 
+    '4ze_1co', 
+    '5st', 
+    '5ze'
+]
+
+pretrain_tasks_data_quality: {
+    '1st_1ze_3co': "expert", 
+    '1st_2ze_2co': "expert", 
+    '1st_3ze_1co': "expert", 
+    '1st_4co': "expert", 
+    '1st_4ze': "expert", 
+    '1ze_4co': "expert", 
+    '2st_1ze_2co': "expert", 
+    '2st_2ze_1co': "expert", 
+    '2st_3co': "expert", 
+    '2st_3ze': "expert", 
+    '2ze_3co': "expert", 
+    '3st_1ze_1co': "expert", 
+    '3st_2co': "expert", 
+    '3st_2ze': "expert", 
+    '3ze_2co': "expert", 
+    '4st_1co': "expert", 
+    '4st_1ze': "expert", 
+    '4ze_1co': "expert", 
+    '5st': "expert", 
+    '5ze': "expert",
+}
