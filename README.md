@@ -1,4 +1,5 @@
 # Graph Conditioned Diffusion for Offline Multi-Agent Reinforcement Learning
+Paper Link: [Graph Conditioned Diffusion for Offline Multi-Agent Reinforcement Learning](https://dl.acm.org/doi/10.65109/BMST1644)
 
 In this directory, we provide the three necessary codebases for reproducing the results of the experiments discussed in our paper. 
 
